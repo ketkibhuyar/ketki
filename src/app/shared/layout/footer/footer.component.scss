@@ -1,0 +1,78 @@
+.footer-area{
+    display: flex;
+    background-color: rgba(233, 229, 229, 0.52);
+    height: 105px;
+    align-items: center;
+    color: black;
+    justify-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    .footer-icons {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .common-footer-icons{
+        display: flex;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        margin-right: 15px;
+        
+    }
+    .common-footer-icons:hover{
+        cursor: pointer;
+        transform: translateY(2px);
+        transition: all .3s;
+    }
+    .footer-made-with{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        font-family: "Open Sans",sans-serif;
+        font-size: 1rem;
+
+        @media screen and (max-width: 800px) {
+            display: none;
+        }
+    }
+    .footer-wrapper{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-resume-button{
+        background: linear-gradient(-45deg,#7474ea,rgba(48,48,212,.961),#0e0ed0);
+        border: 5px solid #bebef8;
+        border-radius: 10px;
+        box-shadow: -5px 30px 20px -20px rgba(86,93,113,.38);
+        color: #fff;
+        cursor: pointer;
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        transition: .4s cubic-bezier(.25,.46,.45,.94);
+
+        @media screen and (max-width: 800px) {
+            padding: .8rem 1.8rem;
+        }
+    }
+    .footer-resume-button:hover{
+        cursor: pointer;
+        transform: translateY(2px);
+        transition: all .3s;
+
+        @media screen and (max-width: 800px) {
+            padding: .8rem 1.8rem;
+        }
+    }
+}
+
+// background-image: linear-gradient( 
+//                                       -225deg
+//                                       ,rgb(247, 247, 89) 1%,#ff3083 60%,#9516c7);
+//     background-size: 150% 200%;
+//     background-position: right;
